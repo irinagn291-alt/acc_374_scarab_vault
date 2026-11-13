@@ -1,0 +1,966 @@
+// !$*UTF8*$!
+{
+	classes = {
+	};
+	objectVersion = 77;
+	archiveVersion = 1;
+	objects = {
+		2B7BC38559BFEBB729B65758 /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = C2AD79C7D432F129754EA447 /* ScarabVaultWidget.appex */;
+			settings = {
+				ATTRIBUTES = (
+					RemoveHeadersOnCopy,
+				);
+			};
+		};
+		EDDAB48D7A2739E1D6741E60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94639676B890FFBF7FFE00E0 /* PBXProject */;
+			remoteGlobalIDString = 0D86CC6A4D81167EE9259E50 /* ScarabVaultWidget */;
+			remoteInfo = ScarabVaultWidget;
+			proxyType = 1;
+		};
+		4769CE7BB4B7EEF84FE580FE /* PBXGroup */ = {
+			isa = PBXGroup;
+			sourceTree = "<group>";
+			children = (
+				3B7B37FD3F5003133F037812 /* Resources */,
+				9531A3C7A9E46616E60B27A9 /* Sources */,
+				92FE61796F3306DCDD00D466 /* Tests */,
+				F73F472B6C634B9B4DE98D58 /* UITests */,
+				47FF06B8481FF3F6C1BE1833 /* Products */,
+				01D1B4DF30FB8B0869B67D0A /* Widgets */,
+				4E4F5F9DDF4320AF634F4AFD /* WidgetTests/WidgetIntegrationTests.swift */,
+				7476362FF679004CFAF2AAA6 /* WidgetTests/WidgetTests.swift */,
+			);
+		};
+		96124A257923FC57A084493A /* WidgetExtension/ProgressWidget.swift */ = {
+			path = WidgetExtension/ProgressWidget.swift;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			sourceTree = SOURCE_ROOT;
+		};
+		9531A3C7A9E46616E60B27A9 /* Sources */ = {
+			path = Sources;
+			isa = PBXGroup;
+			children = (
+				FB6F32C76FDF69278549163C /* CollectionViews.swift */,
+				34487068EA57CC1F08236A6C /* MechanismView.swift */,
+				E2B4D37DECE8989063073D1F /* Progress.swift */,
+				1C786AF7DBCE706900E7BFCC /* Puzzle.swift */,
+				134B5821F12442C7EDC700CF /* ScarabVaultApp.swift */,
+				C296FA4E210B78D2CED71BE2 /* Theme.swift */,
+			);
+			sourceTree = "<group>";
+		};
+		EB64A2CD7B380A6A85F45AC5 /* PBXResourcesBuildPhase */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		913D191C8059AA663AF1122E /* ScarabVaultWidgetTests */ = {
+			productType = "com.apple.product-type.bundle.unit-test";
+			productReference = BD914E977609DC7718F89529 /* ScarabVaultWidgetTests.xctest */;
+			buildConfigurationList = 3FEE1FBF3AAEA9DE6AC40CE7 /* XCConfigurationList */;
+			productName = ScarabVaultWidgetTests;
+			isa = PBXNativeTarget;
+			buildPhases = (
+				44526E944FA126C424978321 /* PBXSourcesBuildPhase */,
+			);
+			dependencies = (
+				54FD14CD74B4EC876901BCD3 /* PBXTargetDependency */,
+			);
+			name = ScarabVaultWidgetTests;
+			buildRules = (
+			);
+		};
+		44526E944FA126C424978321 /* PBXSourcesBuildPhase */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39EC4CAED69596380AEC14ED /* PBXBuildFile */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98AD6BAEE72F5E08EDDD1910 /* ScarabVault */ = {
+			productType = "com.apple.product-type.application";
+			productReference = D7DD830C707CF4ACEA47EEE8 /* ScarabVault.app */;
+			buildConfigurationList = 608AD4DC2C159F59C7623CE0 /* XCConfigurationList */;
+			packageProductDependencies = (
+			);
+			productName = ScarabVault;
+			isa = PBXNativeTarget;
+			buildPhases = (
+				81262236BDC106B8E6199732 /* PBXSourcesBuildPhase */,
+				18BFEDE824536285744F2629 /* PBXResourcesBuildPhase */,
+				260C93B28A8FFDF454C71EFE /* Embed App Extensions */,
+			);
+			dependencies = (
+				77C71E30360EDA420F4E9BD4 /* PBXTargetDependency */,
+			);
+			name = ScarabVault;
+			buildRules = (
+			);
+		};
+		4E4F5F9DDF4320AF634F4AFD /* WidgetTests/WidgetIntegrationTests.swift */ = {
+			path = WidgetTests/WidgetIntegrationTests.swift;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			sourceTree = SOURCE_ROOT;
+		};
+		24D06B1FACD9B82DF4386B28 /* PBXSourcesBuildPhase */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A96A021A5E7835B6ACFE07BA /* PBXBuildFile */,
+				A7F4F4A97372698C9D16AC3D /* PBXBuildFile */,
+				4D4EC140A51EC79889B88A0C /* PBXBuildFile */,
+				86C19064E7A7B8A6897F1AE2 /* PBXBuildFile */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33DCC9A10908734346629A82 /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = D265CF3F70545E6DA8CE8B9B /* Sources/WidgetBridge.swift */;
+		};
+		138EB2A0A8BB372AF0874ACD /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = C296FA4E210B78D2CED71BE2 /* Theme.swift */;
+		};
+		86C19064E7A7B8A6897F1AE2 /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = 96124A257923FC57A084493A /* WidgetExtension/ProgressWidget.swift */;
+		};
+		19B4F21F8F1CF40530963A1C /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = FB6F32C76FDF69278549163C /* CollectionViews.swift */;
+		};
+		1F6F099AFB297C2A3FA6C412 /* PBXSourcesBuildPhase */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E65AC0E032CBDCAFC703A58C /* PBXBuildFile */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEDDC30AF04BD3503720C6E4 /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = 34487068EA57CC1F08236A6C /* MechanismView.swift */;
+		};
+		94639676B890FFBF7FFE00E0 /* PBXProject */ = {
+			buildConfigurationList = 9233BF9B2266E9C9D58483B9 /* XCConfigurationList */;
+			targets = (
+				98AD6BAEE72F5E08EDDD1910 /* ScarabVault */,
+				0C54817479F32B64FAA0695B /* ScarabVaultTests */,
+				AB198DD62B53997D9A424725 /* ScarabVaultUITests */,
+				0D86CC6A4D81167EE9259E50 /* ScarabVaultWidget */,
+				913D191C8059AA663AF1122E /* ScarabVaultWidgetTests */,
+			);
+			minimizedProjectReferenceProxies = 1;
+			developmentRegion = "en-GB";
+			knownRegions = (
+				Base,
+				"en-GB",
+			);
+			isa = PBXProject;
+			productRefGroup = 47FF06B8481FF3F6C1BE1833 /* Products */;
+			projectDirPath = "";
+			attributes = {
+				LastUpgradeCheck = 1430;
+				BuildIndependentTargetsInParallel = YES;
+				TargetAttributes = {
+					98AD6BAEE72F5E08EDDD1910 /* ScarabVault */ = {
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					AB198DD62B53997D9A424725 /* ScarabVaultUITests */ = {
+						TestTargetID = 98AD6BAEE72F5E08EDDD1910 /* ScarabVault */;
+					};
+					0D86CC6A4D81167EE9259E50 /* ScarabVaultWidget */ = {
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			hasScannedForEncodings = 0;
+			projectRoot = "";
+			preferredProjectObjectVersion = 77;
+			mainGroup = 4769CE7BB4B7EEF84FE580FE /* PBXGroup */;
+		};
+		0C54817479F32B64FAA0695B /* ScarabVaultTests */ = {
+			productType = "com.apple.product-type.bundle.unit-test";
+			productReference = F1F7FCB354591426252D4894 /* ScarabVaultTests.xctest */;
+			buildConfigurationList = DE7F1FC8FB09AB1AFEB0FD6C /* XCConfigurationList */;
+			packageProductDependencies = (
+			);
+			productName = ScarabVaultTests;
+			isa = PBXNativeTarget;
+			buildPhases = (
+				1F6F099AFB297C2A3FA6C412 /* PBXSourcesBuildPhase */,
+			);
+			dependencies = (
+				5F63CA7F9FAA5C1DFDFCA1E6 /* PBXTargetDependency */,
+			);
+			name = ScarabVaultTests;
+			buildRules = (
+			);
+		};
+		1C786AF7DBCE706900E7BFCC /* Puzzle.swift */ = {
+			path = Puzzle.swift;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			sourceTree = "<group>";
+		};
+		3B7B37FD3F5003133F037812 /* Resources */ = {
+			path = Resources;
+			isa = PBXGroup;
+			children = (
+				8654FC398C96FFB003DF8432 /* Assets.xcassets */,
+				CFE38DD307FEC1B7850203EA /* PrivacyInfo.xcprivacy */,
+			);
+			sourceTree = "<group>";
+		};
+		2356865F045771B84446E5A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			name = Release;
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScarabVault.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ScarabVault";
+				PRODUCT_BUNDLE_IDENTIFIER = com.scarabvault.expedition.widgettests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 6.0;
+				CODE_SIGN_STYLE = Automatic;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+			};
+		};
+		AA4CC24936F807C72A99B614 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94639676B890FFBF7FFE00E0 /* PBXProject */;
+			remoteGlobalIDString = 98AD6BAEE72F5E08EDDD1910 /* ScarabVault */;
+			remoteInfo = ScarabVault;
+			proxyType = 1;
+		};
+		7E09FD3ECCF86D408506CFF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94639676B890FFBF7FFE00E0 /* PBXProject */;
+			remoteGlobalIDString = 98AD6BAEE72F5E08EDDD1910 /* ScarabVault */;
+			remoteInfo = ScarabVault;
+			proxyType = 1;
+		};
+		81262236BDC106B8E6199732 /* PBXSourcesBuildPhase */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19B4F21F8F1CF40530963A1C /* PBXBuildFile */,
+				BEDDC30AF04BD3503720C6E4 /* PBXBuildFile */,
+				6225A612E5A10063E6669263 /* PBXBuildFile */,
+				EB39C43D7382819F3733848A /* PBXBuildFile */,
+				9942925532CC8919826BFDAA /* PBXBuildFile */,
+				138EB2A0A8BB372AF0874ACD /* PBXBuildFile */,
+				6167D40ED95CFA7BB2556325 /* PBXBuildFile */,
+				8AAA541FAE4080673C654E75 /* PBXBuildFile */,
+				2ABA4247EA22CB2FD43F4820 /* PBXBuildFile */,
+				33DCC9A10908734346629A82 /* PBXBuildFile */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7F4F4A97372698C9D16AC3D /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = EC6483AFB7B43A11143FD633 /* WidgetShared/WidgetIdentity.swift */;
+		};
+		19F8F4A8C646568D7C7C0975 /* PBXSourcesBuildPhase */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC2C06DD96A5FB3BDDB35E5B /* PBXBuildFile */,
+				CCD78AF61AE0E1B323256AB8 /* PBXBuildFile */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D33E19B7D4D0839B392DCC35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				MARKETING_VERSION = 1.0;
+				INFOPLIST_FILE = Support/AppInfo.plist;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Scarab Vault";
+				CODE_SIGN_ENTITLEMENTS = Support/App.entitlements;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.puzzle-games";
+				CURRENT_PROJECT_VERSION = 1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scarabvault.expedition;
+				SDKROOT = iphoneos;
+				CODE_SIGN_STYLE = Automatic;
+			};
+			name = Release;
+		};
+		FA3DA88B2D68D6544F6FFD1D /* ExpeditionUITests.swift */ = {
+			path = ExpeditionUITests.swift;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			sourceTree = "<group>";
+		};
+		BC2C06DD96A5FB3BDDB35E5B /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = FA3DA88B2D68D6544F6FFD1D /* ExpeditionUITests.swift */;
+		};
+		2ABA4247EA22CB2FD43F4820 /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = 4A15185ACDB2A9BE3D102BC1 /* WidgetShared/WidgetSnapshot.swift */;
+		};
+		D265CF3F70545E6DA8CE8B9B /* Sources/WidgetBridge.swift */ = {
+			path = Sources/WidgetBridge.swift;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			sourceTree = SOURCE_ROOT;
+		};
+		AD2C6429C18C913F7048FB9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScarabVault.app/ScarabVault";
+				PRODUCT_BUNDLE_IDENTIFIER = com.scarabvault.ScarabVaultTests;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		1B3706A2885D2BF298E336F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				MARKETING_VERSION = 1.0;
+				INFOPLIST_FILE = Support/AppInfo.plist;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				ENABLE_TESTABILITY = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Scarab Vault";
+				CODE_SIGN_ENTITLEMENTS = Support/App.entitlements;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.puzzle-games";
+				CURRENT_PROJECT_VERSION = 1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scarabvault.expedition;
+				SDKROOT = iphoneos;
+				CODE_SIGN_STYLE = Automatic;
+			};
+			name = Debug;
+		};
+		BD3ACC9418B4D93D47016E21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			name = Release;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				MARKETING_VERSION = 1.0;
+				INFOPLIST_FILE = WidgetExtension/Info.plist;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				GENERATE_INFOPLIST_FILE = NO;
+				CODE_SIGN_ENTITLEMENTS = Support/Widget.entitlements;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 6.0;
+				CURRENT_PROJECT_VERSION = 1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scarabvault.expedition.widget;
+			};
+		};
+		A824477FD0BB4DEE162FD4E3 /* XCConfigurationList */ = {
+			isa = XCConfigurationList;
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+			buildConfigurations = (
+				E982316BCCADE72193BBDED6 /* Debug */,
+				6FE24BD6BD3B32A4DBCD9D44 /* Release */,
+			);
+		};
+		260C93B28A8FFDF454C71EFE /* Embed App Extensions */ = {
+			buildActionMask = 2147483647;
+			dstSubfolderSpec = 13;
+			isa = PBXCopyFilesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+			dstPath = "";
+			files = (
+				2B7BC38559BFEBB729B65758 /* PBXBuildFile */,
+			);
+			name = "Embed App Extensions";
+		};
+		D7DD830C707CF4ACEA47EEE8 /* ScarabVault.app */ = {
+			path = ScarabVault.app;
+			isa = PBXFileReference;
+			includeInIndex = 0;
+			lastKnownFileType = wrapper.application;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B9CB9F8FE6FB55887D75A9AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98AD6BAEE72F5E08EDDD1910 /* ScarabVault */;
+			targetProxy = AA4CC24936F807C72A99B614 /* PBXContainerItemProxy */;
+		};
+		6FE24BD6BD3B32A4DBCD9D44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				TEST_TARGET_NAME = ScarabVault;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				PRODUCT_BUNDLE_IDENTIFIER = com.scarabvault.ScarabVaultUITests;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		4E49E7E19CACE90FD4F24BAB /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = CFE38DD307FEC1B7850203EA /* PrivacyInfo.xcprivacy */;
+		};
+		34487068EA57CC1F08236A6C /* MechanismView.swift */ = {
+			path = MechanismView.swift;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			sourceTree = "<group>";
+		};
+		8F0770969EED944DAD201DB2 /* PBXFrameworksBuildPhase */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EE85494C7E1D5AF2CFF736C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScarabVault.app/ScarabVault";
+				PRODUCT_BUNDLE_IDENTIFIER = com.scarabvault.ScarabVaultTests;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C13872C3F39E24C12C6B4676 /* WidgetShared/ProgressWidgetView.swift */ = {
+			path = WidgetShared/ProgressWidgetView.swift;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			sourceTree = SOURCE_ROOT;
+		};
+		536B096E92C3E323EBD22515 /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = 8654FC398C96FFB003DF8432 /* Assets.xcassets */;
+		};
+		5E4A2FFBF412419768435A18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			name = Debug;
+			buildSettings = {
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScarabVault.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ScarabVault";
+				GENERATE_INFOPLIST_FILE = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				CODE_SIGN_STYLE = Automatic;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scarabvault.expedition.widgettests;
+			};
+		};
+		0D86CC6A4D81167EE9259E50 /* ScarabVaultWidget */ = {
+			productType = "com.apple.product-type.app-extension";
+			productReference = C2AD79C7D432F129754EA447 /* ScarabVaultWidget.appex */;
+			buildConfigurationList = 770EE125AFC436DE002E5B4C /* XCConfigurationList */;
+			productName = ScarabVaultWidget;
+			isa = PBXNativeTarget;
+			buildPhases = (
+				24D06B1FACD9B82DF4386B28 /* PBXSourcesBuildPhase */,
+				8F0770969EED944DAD201DB2 /* PBXFrameworksBuildPhase */,
+				EB64A2CD7B380A6A85F45AC5 /* PBXResourcesBuildPhase */,
+			);
+			dependencies = (
+			);
+			name = ScarabVaultWidget;
+			buildRules = (
+			);
+		};
+		134B5821F12442C7EDC700CF /* ScarabVaultApp.swift */ = {
+			path = ScarabVaultApp.swift;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			sourceTree = "<group>";
+		};
+		E2B4D37DECE8989063073D1F /* Progress.swift */ = {
+			path = Progress.swift;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			sourceTree = "<group>";
+		};
+		F84EED349479BBCF089D36A1 /* ScarabVaultUITests.xctest */ = {
+			path = ScarabVaultUITests.xctest;
+			isa = PBXFileReference;
+			includeInIndex = 0;
+			lastKnownFileType = wrapper.cfbundle;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0D2BB7E0AEAA083658B5F85F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				COPY_PHASE_STRIP = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_COMMA = YES;
+				SWIFT_VERSION = 6.0;
+				CLANG_WARN_INT_CONVERSION = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				SDKROOT = iphoneos;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				GENERATE_INFOPLIST_FILE = YES;
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				CLANG_ENABLE_MODULES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				MARKETING_VERSION = 1.0;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+			};
+			name = Release;
+		};
+		7476362FF679004CFAF2AAA6 /* WidgetTests/WidgetTests.swift */ = {
+			path = WidgetTests/WidgetTests.swift;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			sourceTree = SOURCE_ROOT;
+		};
+		EB39C43D7382819F3733848A /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = 1C786AF7DBCE706900E7BFCC /* Puzzle.swift */;
+		};
+		FB6F32C76FDF69278549163C /* CollectionViews.swift */ = {
+			path = CollectionViews.swift;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			sourceTree = "<group>";
+		};
+		BD914E977609DC7718F89529 /* ScarabVaultWidgetTests.xctest */ = {
+			path = ScarabVaultWidgetTests.xctest;
+			isa = PBXFileReference;
+			explicitFileType = wrapper.cfbundle;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8654FC398C96FFB003DF8432 /* Assets.xcassets */ = {
+			path = Assets.xcassets;
+			isa = PBXFileReference;
+			lastKnownFileType = folder.assetcatalog;
+			sourceTree = "<group>";
+		};
+		E65AC0E032CBDCAFC703A58C /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = F28D9EA5FAE942421DDD5A14 /* PuzzleTests.swift */;
+		};
+		770EE125AFC436DE002E5B4C /* XCConfigurationList */ = {
+			isa = XCConfigurationList;
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+			buildConfigurations = (
+				AFD39F3E8C3B866852DE095E /* Debug */,
+				BD3ACC9418B4D93D47016E21 /* Release */,
+			);
+		};
+		4A15185ACDB2A9BE3D102BC1 /* WidgetShared/WidgetSnapshot.swift */ = {
+			path = WidgetShared/WidgetSnapshot.swift;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			sourceTree = SOURCE_ROOT;
+		};
+		A32CF51E27F7A4C21A607A0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94639676B890FFBF7FFE00E0 /* PBXProject */;
+			remoteGlobalIDString = 98AD6BAEE72F5E08EDDD1910 /* ScarabVault */;
+			remoteInfo = ScarabVault;
+			proxyType = 1;
+		};
+		C2AD79C7D432F129754EA447 /* ScarabVaultWidget.appex */ = {
+			path = ScarabVaultWidget.appex;
+			isa = PBXFileReference;
+			explicitFileType = "wrapper.app-extension";
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CFE38DD307FEC1B7850203EA /* PrivacyInfo.xcprivacy */ = {
+			isa = PBXFileReference;
+			path = PrivacyInfo.xcprivacy;
+			sourceTree = "<group>";
+		};
+		54FD14CD74B4EC876901BCD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98AD6BAEE72F5E08EDDD1910 /* ScarabVault */;
+			targetProxy = 7E09FD3ECCF86D408506CFF1 /* PBXContainerItemProxy */;
+		};
+		18BFEDE824536285744F2629 /* PBXResourcesBuildPhase */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				536B096E92C3E323EBD22515 /* PBXBuildFile */,
+				4E49E7E19CACE90FD4F24BAB /* PBXBuildFile */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F63CA7F9FAA5C1DFDFCA1E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98AD6BAEE72F5E08EDDD1910 /* ScarabVault */;
+			targetProxy = A32CF51E27F7A4C21A607A0F /* PBXContainerItemProxy */;
+		};
+		C296FA4E210B78D2CED71BE2 /* Theme.swift */ = {
+			path = Theme.swift;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			sourceTree = "<group>";
+		};
+		F28D9EA5FAE942421DDD5A14 /* PuzzleTests.swift */ = {
+			path = PuzzleTests.swift;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			sourceTree = "<group>";
+		};
+		4D4EC140A51EC79889B88A0C /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = 4A15185ACDB2A9BE3D102BC1 /* WidgetShared/WidgetSnapshot.swift */;
+		};
+		CCD78AF61AE0E1B323256AB8 /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = 4E4F5F9DDF4320AF634F4AFD /* WidgetTests/WidgetIntegrationTests.swift */;
+		};
+		E982316BCCADE72193BBDED6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				TEST_TARGET_NAME = ScarabVault;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				PRODUCT_BUNDLE_IDENTIFIER = com.scarabvault.ScarabVaultUITests;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		77C71E30360EDA420F4E9BD4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D86CC6A4D81167EE9259E50 /* ScarabVaultWidget */;
+			targetProxy = EDDAB48D7A2739E1D6741E60 /* PBXContainerItemProxy */;
+		};
+		92FE61796F3306DCDD00D466 /* Tests */ = {
+			path = Tests;
+			isa = PBXGroup;
+			children = (
+				F28D9EA5FAE942421DDD5A14 /* PuzzleTests.swift */,
+			);
+			sourceTree = "<group>";
+		};
+		9233BF9B2266E9C9D58483B9 /* XCConfigurationList */ = {
+			isa = XCConfigurationList;
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+			buildConfigurations = (
+				91EC5E5C98864BC2BF6DD36E /* Debug */,
+				0D2BB7E0AEAA083658B5F85F /* Release */,
+			);
+		};
+		608AD4DC2C159F59C7623CE0 /* XCConfigurationList */ = {
+			isa = XCConfigurationList;
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+			buildConfigurations = (
+				1B3706A2885D2BF298E336F6 /* Debug */,
+				D33E19B7D4D0839B392DCC35 /* Release */,
+			);
+		};
+		F73F472B6C634B9B4DE98D58 /* UITests */ = {
+			path = UITests;
+			isa = PBXGroup;
+			children = (
+				FA3DA88B2D68D6544F6FFD1D /* ExpeditionUITests.swift */,
+			);
+			sourceTree = "<group>";
+		};
+		47FF06B8481FF3F6C1BE1833 /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			children = (
+				D7DD830C707CF4ACEA47EEE8 /* ScarabVault.app */,
+				F1F7FCB354591426252D4894 /* ScarabVaultTests.xctest */,
+				F84EED349479BBCF089D36A1 /* ScarabVaultUITests.xctest */,
+				C2AD79C7D432F129754EA447 /* ScarabVaultWidget.appex */,
+				BD914E977609DC7718F89529 /* ScarabVaultWidgetTests.xctest */,
+			);
+			sourceTree = "<group>";
+		};
+		8AAA541FAE4080673C654E75 /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = EC6483AFB7B43A11143FD633 /* WidgetShared/WidgetIdentity.swift */;
+		};
+		AFD39F3E8C3B866852DE095E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			name = Debug;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				MARKETING_VERSION = 1.0;
+				INFOPLIST_FILE = WidgetExtension/Info.plist;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				GENERATE_INFOPLIST_FILE = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				CODE_SIGN_ENTITLEMENTS = Support/Widget.entitlements;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				CURRENT_PROJECT_VERSION = 1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scarabvault.expedition.widget;
+			};
+		};
+		6225A612E5A10063E6669263 /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = E2B4D37DECE8989063073D1F /* Progress.swift */;
+		};
+		01D1B4DF30FB8B0869B67D0A /* Widgets */ = {
+			isa = PBXGroup;
+			name = Widgets;
+			children = (
+				C13872C3F39E24C12C6B4676 /* WidgetShared/ProgressWidgetView.swift */,
+				EC6483AFB7B43A11143FD633 /* WidgetShared/WidgetIdentity.swift */,
+				4A15185ACDB2A9BE3D102BC1 /* WidgetShared/WidgetSnapshot.swift */,
+				D265CF3F70545E6DA8CE8B9B /* Sources/WidgetBridge.swift */,
+				96124A257923FC57A084493A /* WidgetExtension/ProgressWidget.swift */,
+			);
+			sourceTree = "<group>";
+		};
+		3FEE1FBF3AAEA9DE6AC40CE7 /* XCConfigurationList */ = {
+			isa = XCConfigurationList;
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+			buildConfigurations = (
+				5E4A2FFBF412419768435A18 /* Debug */,
+				2356865F045771B84446E5A1 /* Release */,
+			);
+		};
+		39EC4CAED69596380AEC14ED /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = 7476362FF679004CFAF2AAA6 /* WidgetTests/WidgetTests.swift */;
+		};
+		EC6483AFB7B43A11143FD633 /* WidgetShared/WidgetIdentity.swift */ = {
+			path = WidgetShared/WidgetIdentity.swift;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			sourceTree = SOURCE_ROOT;
+		};
+		91EC5E5C98864BC2BF6DD36E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				COPY_PHASE_STRIP = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_COMMA = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 6.0;
+				CLANG_WARN_INT_CONVERSION = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				SDKROOT = iphoneos;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				GENERATE_INFOPLIST_FILE = YES;
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				CLANG_ENABLE_MODULES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				MARKETING_VERSION = 1.0;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				ENABLE_TESTABILITY = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				GCC_DYNAMIC_NO_PIC = NO;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+			};
+			name = Debug;
+		};
+		6167D40ED95CFA7BB2556325 /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = C13872C3F39E24C12C6B4676 /* WidgetShared/ProgressWidgetView.swift */;
+		};
+		AB198DD62B53997D9A424725 /* ScarabVaultUITests */ = {
+			productType = "com.apple.product-type.bundle.ui-testing";
+			productReference = F84EED349479BBCF089D36A1 /* ScarabVaultUITests.xctest */;
+			buildConfigurationList = A824477FD0BB4DEE162FD4E3 /* XCConfigurationList */;
+			packageProductDependencies = (
+			);
+			productName = ScarabVaultUITests;
+			isa = PBXNativeTarget;
+			buildPhases = (
+				19F8F4A8C646568D7C7C0975 /* PBXSourcesBuildPhase */,
+			);
+			dependencies = (
+				B9CB9F8FE6FB55887D75A9AA /* PBXTargetDependency */,
+			);
+			name = ScarabVaultUITests;
+			buildRules = (
+			);
+		};
+		9942925532CC8919826BFDAA /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = 134B5821F12442C7EDC700CF /* ScarabVaultApp.swift */;
+		};
+		F1F7FCB354591426252D4894 /* ScarabVaultTests.xctest */ = {
+			path = ScarabVaultTests.xctest;
+			isa = PBXFileReference;
+			includeInIndex = 0;
+			lastKnownFileType = wrapper.cfbundle;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DE7F1FC8FB09AB1AFEB0FD6C /* XCConfigurationList */ = {
+			isa = XCConfigurationList;
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+			buildConfigurations = (
+				1EE85494C7E1D5AF2CFF736C /* Debug */,
+				AD2C6429C18C913F7048FB9C /* Release */,
+			);
+		};
+		A96A021A5E7835B6ACFE07BA /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = C13872C3F39E24C12C6B4676 /* WidgetShared/ProgressWidgetView.swift */;
+		};
+	};
+	rootObject = 94639676B890FFBF7FFE00E0 /* PBXProject */;
+}
