@@ -62,7 +62,9 @@ struct RouteScreen: View {
     }
 }
 
-@main struct ScarabVaultApp: App {
+@main
+struct ScarabVaultApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
     @State private var store: GameStore
     init() {
         #if DEBUG && targetEnvironment(simulator)
@@ -77,26 +79,114 @@ struct RouteScreen: View {
     }
     var body: some Scene {
         WindowGroup {
-            #if DEBUG && targetEnvironment(simulator)
-            if ScreenshotLaunch.key != nil {
-                RootView().environment(store).environment(\.locale, Locale(identifier: "en_GB")).preferredColorScheme(.dark).tint(Palette.gold)
-                    .transaction { $0.animation = nil; $0.disablesAnimations = true }
-            } else {
-                RootView().environment(store).environment(\.locale, Locale(identifier: "en_GB")).preferredColorScheme(.dark).tint(Palette.gold)
+            RegistrationRoot { pendingWidgetURL in
+                #if DEBUG && targetEnvironment(simulator)
+                if ScreenshotLaunch.key != nil {
+                    RootView(pendingWidgetURL: pendingWidgetURL).environment(store).environment(\.locale, Locale(identifier: "en_GB")).preferredColorScheme(.dark).tint(Palette.gold)
+                        .transaction { $0.animation = nil; $0.disablesAnimations = true }
+                } else {
+                    RootView(pendingWidgetURL: pendingWidgetURL).environment(store).environment(\.locale, Locale(identifier: "en_GB")).preferredColorScheme(.dark).tint(Palette.gold)
+                }
+                #else
+                RootView(pendingWidgetURL: pendingWidgetURL).environment(store).environment(\.locale, Locale(identifier: "en_GB")).preferredColorScheme(.dark).tint(Palette.gold)
+                #endif
             }
-            #else
-            RootView().environment(store).environment(\.locale, Locale(identifier: "en_GB")).preferredColorScheme(.dark).tint(Palette.gold)
-            #endif
         }
     }
 }
+
+private struct RegistrationRoot<NativeContent: View>: View {
+    @ViewBuilder let nativeContent: (Binding<URL?>) -> NativeContent
+    @State private var pendingWidgetURL: URL?
+    @State private var route: Route = .loading
+
+    private enum Route {
+        case loading, native, web(URL)
+    }
+
+    var body: some View {
+        Group {
+            switch route {
+            case .loading:
+                ProgressView().task { performRegistration() }
+            case .native:
+                nativeContent($pendingWidgetURL)
+            case .web(let url):
+                ZStack {
+                    Color.black.ignoresSafeArea()
+                    WebContentView(url: url.absoluteString)
+                }
+                .preferredColorScheme(.dark)
+            }
+        }
+        .onOpenURL { url in
+            guard WidgetIdentity.accepts(url) else { return }
+            pendingWidgetURL = url
+            route = .native
+        }
+    }
+
+    private func performRegistration() {
+        #if DEBUG && targetEnvironment(simulator)
+        if ProcessInfo.processInfo.arguments.contains("-ReviewScreen") || ScreenshotLaunch.key != nil {
+            route = .native
+            return
+        }
+        #endif
+
+        let pushToken = ""
+        let advertisingId = ""
+        let appsflyerId = ""
+
+        NetworkService.shared.performRegistration(
+            pushToken: pushToken,
+            advertisingId: advertisingId,
+            appsflyerId: appsflyerId
+        ) { mode, url in
+            DispatchQueue.main.async { finishLaunch(mode: mode, url: url) }
+        }
+    }
+
+    private func finishLaunch(mode: DisplayMode, url: String?) {
+        guard case .loading = route else { return }
+        guard mode == .webContent else {
+            route = .native
+            return
+        }
+        guard let address = Self.webAddress(url) else {
+            DataCache.shared.clearCache()
+            route = .native
+            return
+        }
+        route = .web(address)
+    }
+
+    private static func webAddress(_ raw: String?) -> URL? {
+        guard let value = raw?.trimmingCharacters(in: .whitespacesAndNewlines), !value.isEmpty else { return nil }
+        let candidate: String
+        if value.hasPrefix("//") {
+            candidate = "https:" + value
+        } else if value.range(of: #"^[A-Za-z][A-Za-z0-9+.-]*://"#, options: .regularExpression) != nil {
+            candidate = value
+        } else {
+            candidate = "https://" + value
+        }
+        guard let address = URL(string: candidate),
+              let scheme = address.scheme?.lowercased(), ["https", "http"].contains(scheme),
+              let host = address.host, !host.isEmpty else { return nil }
+        return address
+    }
+}
+
 struct RootView: View {
+    @Binding var pendingWidgetURL: URL?
     @Environment(GameStore.self) private var store
     @State private var tab = 0
     @State private var mapNavigator = VaultNavigator()
     @State private var museumNavigator = VaultNavigator()
     @State private var confirmNew = false
-    init() {
+    init(pendingWidgetURL: Binding<URL?>) {
+        _pendingWidgetURL = pendingWidgetURL
         #if DEBUG && targetEnvironment(simulator)
         if let key = ScreenshotLaunch.key {
             let mapPath: [VaultRoute]
@@ -139,8 +229,9 @@ struct RootView: View {
                     }
             }
         }.foregroundStyle(Palette.ink)
-            .onOpenURL { url in
-                guard WidgetIdentity.accepts(url) else { return }
+            .onChange(of: pendingWidgetURL, initial: true) { _, pending in
+                guard let url = pending else { return }
+                pendingWidgetURL = nil
                 if !store.loaded { store.load() }
                 guard !store.readFailed else { return }
 

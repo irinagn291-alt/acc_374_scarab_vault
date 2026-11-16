@@ -16,6 +16,7 @@ targets:
     type: application
     platform: iOS
     sources:
+    - Black
     - Sources
     - Resources
     - WidgetShared

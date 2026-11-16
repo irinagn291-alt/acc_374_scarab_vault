@@ -6,7 +6,7 @@ let package = Package(
     platforms: [.macOS(.v14)],
     products: [.library(name: "ScarabVaultLogic", targets: ["ScarabVault"])],
     targets: [
-        .target(name: "ScarabVault", path: "Sources", exclude: ["ScarabVaultApp.swift", "MechanismView.swift", "CollectionViews.swift", "Theme.swift"], sources: ["Puzzle.swift", "Progress.swift"]),
+        .target(name: "ScarabVault", path: "Sources", exclude: ["APIConfig.swift", "AppDelegate.swift", "ScarabVaultApp.swift", "MechanismView.swift", "CollectionViews.swift", "Theme.swift"], sources: ["Puzzle.swift", "Progress.swift"]),
         .testTarget(name: "ScarabVaultLogicTests", dependencies: ["ScarabVault"], path: "Tests")
     ],
     swiftLanguageModes: [.v6]

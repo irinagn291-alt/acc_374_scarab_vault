@@ -11,7 +11,7 @@ final class ExpeditionUITests: XCTestCase {
     }
     @MainActor func testExpeditionJourney() async throws {
         let app = XCUIApplication()
-        app.launchArguments = ["--ui-testing", "--reset-progress"]
+        app.launchArguments = ["-ReviewScreen", "--ui-testing", "--reset-progress"]
         app.launch()
         XCTAssertTrue(app.buttons["resume"].waitForExistence(timeout: 15))
         capture("01-map")
@@ -56,7 +56,7 @@ final class ExpeditionUITests: XCTestCase {
         app.descendants(matching: .any).matching(identifier: "Journal").firstMatch.tap()
         XCTAssertTrue(app.staticTexts["Dawn Scarab"].exists)
         app.terminate()
-        app.launchArguments = ["--ui-testing"]
+        app.launchArguments = ["-ReviewScreen", "--ui-testing"]
         app.launch()
         XCTAssertTrue(app.buttons["resume"].waitForExistence(timeout: 10))
         XCTAssertTrue(app.staticTexts["1 / 15 rooms"].exists)
@@ -72,7 +72,7 @@ final class ExpeditionUITests: XCTestCase {
     }
     @MainActor func testAllTemplesAndFiveCylinders() {
         let app = XCUIApplication()
-        app.launchArguments = ["--ui-testing", "--reset-progress"]
+        app.launchArguments = ["-ReviewScreen", "--ui-testing", "--reset-progress"]
         app.launch()
         XCTAssertTrue(app.buttons["resume"].waitForExistence(timeout: 15))
         app.buttons["resume"].tap()
