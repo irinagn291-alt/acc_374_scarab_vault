@@ -1,4 +1,4 @@
-<!-- gf-brief source=41a64bc382b883120c7c0c775d937ac67f1b0e6d43239bfd33bd9cc85a5294ab written=2026-11-14T12:25:30+03:00 -->
+<!-- gf-brief source=41a64bc382b883120c7c0c775d937ac67f1b0e6d43239bfd33bd9cc85a5294ab written=2026-11-14T12:46:07+03:00 -->
 # Scarab Vault
 
 ## What it is

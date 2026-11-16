@@ -1,7 +1,7 @@
-Explore five Egyptian-themed temples in Scarab Vault, an adventure puzzle for iPhone and iPad. Turn stone cylinders to match each target inscription, open chambers and recover 15 artefacts, each with its own short story.
+Explore five Egyptian-themed temples in Scarab Vault, an adventure puzzle for iPhone and iPad. Turn stone cylinders to match each target inscription, open chambers, and recover 15 artifacts, each with its own short story.
 
 Each temple introduces a different cylinder rule. Use three levels of hints when you need guidance, or reset a room to its starting board. Complete three rooms to earn a temple seal and unlock the next temple. You can revisit completed rooms at any time.
 
-Browse your discoveries in the Museum and use the Journal to review symbols, visited temple rules and completed rooms. A home-screen widget shows expedition progress and offers a route back into the game.
+Browse your discoveries in the Museum and use the Journal to review symbols, visited temple rules, and completed rooms. A Home Screen widget shows expedition progress and offers a route back into the game.
 
 The interface is in British English. Game content and the puzzle solver are stored locally.

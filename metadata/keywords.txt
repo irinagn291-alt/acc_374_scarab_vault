@@ -1,1 +1,1 @@
-Egyptian,puzzle,temples,artefacts,cylinders,inscriptions,adventure,glyphs
+Egyptian,puzzle,temples,artifacts,cylinders,inscriptions,adventure,glyphs

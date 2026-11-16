@@ -372,7 +372,7 @@
 					"@executable_path/Frameworks",
 				);
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				INFOPLIST_FILE = Support/AppInfo.plist;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -384,7 +384,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.puzzle-games";
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.scarabvault.expedition;
 				SDKROOT = iphoneos;
 				CODE_SIGN_STYLE = Automatic;
@@ -436,7 +436,7 @@
 				);
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				INFOPLIST_FILE = Support/AppInfo.plist;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -449,7 +449,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.puzzle-games";
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.scarabvault.expedition;
 				SDKROOT = iphoneos;
 				CODE_SIGN_STYLE = Automatic;
@@ -467,7 +467,7 @@
 				);
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_STYLE = Automatic;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				INFOPLIST_FILE = WidgetExtension/Info.plist;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -476,7 +476,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 6.0;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.scarabvault.expedition.widget;
 			};
@@ -629,7 +629,7 @@
 		0D2BB7E0AEAA083658B5F85F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				CLANG_WARN_INFINITE_RECURSION = YES;
@@ -660,7 +660,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				CLANG_ENABLE_MODULES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -874,7 +874,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_STYLE = Automatic;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				INFOPLIST_FILE = WidgetExtension/Info.plist;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -884,7 +884,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.scarabvault.expedition.widget;
 			};
@@ -915,7 +915,7 @@
 		91EC5E5C98864BC2BF6DD36E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				CLANG_WARN_INFINITE_RECURSION = YES;
@@ -947,7 +947,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				CLANG_ENABLE_MODULES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				ENABLE_TESTABILITY = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
