@@ -1,5 +1,6 @@
 name: ScarabVault
 options:
+  createIntermediateGroups: true
   bundleIdPrefix: com.scarabvault
   deploymentTarget:
     iOS: '17.0'
