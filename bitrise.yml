@@ -283,7 +283,7 @@ workflows:
         - content: |
             #!/bin/bash
             set -euo pipefail
-            cd "$BITRISE_SOURCE_DIR"
+            cd "${BITRISE_SOURCE_DIR:-${CM_BUILD_DIR:-.}}"
 
             if [ ! -d fastlane/metadata ]; then
               echo "No fastlane/metadata in the repository — run 'gf metadata generate' first." >&2
@@ -329,7 +329,7 @@ workflows:
         - content: |
             #!/bin/bash
             set -euo pipefail
-            cd "$BITRISE_SOURCE_DIR"
+            cd "${BITRISE_SOURCE_DIR:-${CM_BUILD_DIR:-.}}"
 
             export APP_BUNDLE_ID ASC_KEY_ID ASC_ISSUER_ID ASC_API_KEY_CONTENT
 
